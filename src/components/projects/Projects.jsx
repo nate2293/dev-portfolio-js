@@ -189,68 +189,82 @@ const projects = [
       </>
     ),
   },
-  {
-    title: "To-Do-List",
-    imgSrc: "project-imgs/To-Do-List.jpg",
-    code: "https://github.com/nate2293/To-Do-List",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    {
+    title: "Movie & TV Discovery",
+    imgSrc: "project-imgs/movie-api.jpg",
+    code: "https://github.com/nate2293/movie-api-application",
+    projectLink: "https://movie-api-application-oqxp8pgg.on-forge.com",
     tech: [
       "Laravel",
-      "CRUD",
-      "MySQL",
-      "Blade",
+      "React",
+      "TypeScript",
+      "Inertia.js",
+      "TMDB API",
       "Tailwind CSS",
-      "TermonUI",
-      "PHPUnit",
+      "MySQL",
+      "Motion",
+      "Laravel Forge",
     ],
     description:
-      "To-Do-List application built with Laravel, allowing users to manage tasks efficiently.",
+      "Full-stack Laravel and React application integrating the TMDB API for movie and TV discovery, search and detailed content information.",
     modalContent: (
       <>
         <p>
-          To-Do List is a Laravel task management application designed to help
-          users organise and manage their everyday tasks through a simple and
-          intuitive interface.
+          Movie & TV Discovery is a full-stack web application built with
+          Laravel, React, TypeScript and Inertia.js, integrating the TMDB API to
+          provide dynamic movie and television data.
         </p>
 
         <p>
-          The application provides user authentication, allowing each user to
-          maintain their own personal task list. Tasks are associated with
-          individual users to ensure that users can only access and manage their
-          own data.
+          The application allows users to explore trending, popular, top-rated
+          and genre-based movies and TV series. Multi-category search enables
+          users to search TMDB for both movies and television content from a
+          single interface.
         </p>
 
         <p>
-          Users can create, view, update and delete tasks through a complete
-          CRUD workflow. Tasks can also be marked as completed or pending, with
-          completion dates recorded to provide additional progress tracking.
+          Movie and TV data is retrieved through a dedicated Laravel service
+          using authenticated server-side HTTP requests to the TMDB REST API.
+          API credentials are securely managed through Laravel environment
+          configuration rather than being exposed to the React frontend.
         </p>
 
         <p>
-          The interface is built using Blade, Tailwind CSS and reusable Termon
-          UI components. Components including forms, cards, buttons, modals,
-          chips and pagination are used to maintain a clean and consistent
-          interface throughout the application.
+          The React and TypeScript frontend uses reusable carousel, hero and
+          expandable card components to present content responsively. Inertia.js
+          connects the Laravel backend with the React frontend while Tailwind
+          CSS and Motion are used for responsive styling, transitions and
+          interactive interface elements.
         </p>
 
         <p>
-          Additional functionality includes paginated task lists, flash
-          notifications to provide feedback after actions and confirmation
-          modals to help prevent tasks from being accidentally deleted.
+          Detailed movie information can be retrieved dynamically, while TV
+          functionality provides series information, seasons and individual
+          episode data through additional TMDB endpoints.
         </p>
 
         <p>
-          PHPUnit feature tests are used to test key application functionality,
-          including task creation, updating and deletion, as well as ensuring
-          users cannot access tasks belonging to other users.
+          The application uses Laravel routing, controllers and service classes
+          to separate responsibilities between the user interface, application
+          logic and external API integration. JSON responses from TMDB are
+          processed by Laravel and consumed by reusable React components.
         </p>
 
         <p>
-          Developing this project strengthened my understanding of Laravel's MVC
-          architecture, CRUD operations, Eloquent relationships, authentication,
-          validation, database interactions and feature testing.
+          The project uses MySQL in production and Git/GitHub for version
+          control. The application is deployed through Laravel Forge, including
+          production environment configuration, database migrations, Composer
+          dependencies and the Vite frontend build process.
+        </p>
+
+        <p>
+          Developing this project strengthened my experience with full-stack
+          Laravel development, React, TypeScript, Inertia.js, REST API
+          integration, JSON data handling, server-side API authentication,
+          reusable component development, responsive design and production
+          deployment.
         </p>
       </>
     ),
   },
-];
+]
