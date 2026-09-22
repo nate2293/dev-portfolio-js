@@ -189,7 +189,7 @@ const projects = [
       </>
     ),
   },
-    {
+  {
     title: "Movie & TV Discovery",
     imgSrc: "project-imgs/movie-api.jpg",
     code: "https://github.com/nate2293/movie-api-application",
@@ -206,20 +206,21 @@ const projects = [
       "Laravel Forge",
     ],
     description:
-      "Full-stack Laravel and React application integrating the TMDB API for movie and TV discovery, search and detailed content information.",
+      "Full-stack Laravel and React movie and TV discovery platform integrating the TMDB API and an AI-powered Movie Assistant for intelligent search, recommendations and content discovery.",
+
     modalContent: (
       <>
         <p>
           Movie & TV Discovery is a full-stack web application built with
-          Laravel, React, TypeScript and Inertia.js, integrating the TMDB API to
-          provide dynamic movie and television data.
+          Laravel, React, TypeScript and Inertia.js, combining the TMDB API with
+          an AI-powered Movie Assistant for movie and television discovery.
         </p>
 
         <p>
           The application allows users to explore trending, popular, top-rated
           and genre-based movies and TV series. Multi-category search enables
-          users to search TMDB for both movies and television content from a
-          single interface.
+          users to search for both movie and television content from a single
+          interface.
         </p>
 
         <p>
@@ -230,41 +231,59 @@ const projects = [
         </p>
 
         <p>
-          The React and TypeScript frontend uses reusable carousel, hero and
-          expandable card components to present content responsively. Inertia.js
-          connects the Laravel backend with the React frontend while Tailwind
-          CSS and Motion are used for responsive styling, transitions and
+          An AI-powered Movie Assistant was developed using the Laravel AI SDK.
+          The assistant can answer movie and television questions and uses
+          custom tools to search TMDB and retrieve detailed movie information,
+          allowing the AI agent to combine language-model responses with
+          application data.
+        </p>
+
+        <p>
+          The Movie Assistant supports tool calling and multi-step tool
+          execution. For example, the agent can search for a movie, identify its
+          TMDB ID and then retrieve detailed information before generating a
+          response for the user.
+        </p>
+
+        <p>
+          The React and TypeScript frontend uses reusable carousel, hero,
+          expandable card and shimmer-border components to create a responsive
+          interface. Inertia.js connects the Laravel backend with React, while
+          Tailwind CSS and Motion provide responsive styling, animations and
           interactive interface elements.
         </p>
 
         <p>
           Detailed movie information can be retrieved dynamically, while TV
           functionality provides series information, seasons and individual
-          episode data through additional TMDB endpoints.
+          episode data through additional TMDB endpoints. The interface also
+          includes responsive desktop and mobile navigation designed for
+          different screen sizes.
         </p>
 
         <p>
-          The application uses Laravel routing, controllers and service classes
-          to separate responsibilities between the user interface, application
-          logic and external API integration. JSON responses from TMDB are
-          processed by Laravel and consumed by reusable React components.
+          Laravel routing, controllers, service classes and AI tools separate
+          responsibilities between the interface, application logic, external
+          API integration and AI functionality. JSON data returned by external
+          services is processed by Laravel and consumed by reusable React
+          components.
         </p>
 
         <p>
           The project uses MySQL in production and Git/GitHub for version
-          control. The application is deployed through Laravel Forge, including
-          production environment configuration, database migrations, Composer
-          dependencies and the Vite frontend build process.
+          control. It is deployed through Laravel Forge with production
+          environment configuration, database migrations, Composer dependencies
+          and the Vite frontend build process.
         </p>
 
         <p>
           Developing this project strengthened my experience with full-stack
           Laravel development, React, TypeScript, Inertia.js, REST API
-          integration, JSON data handling, server-side API authentication,
-          reusable component development, responsive design and production
-          deployment.
+          integration, AI agents, tool calling, JSON data handling, server-side
+          API authentication, reusable component development, responsive design
+          and production deployment.
         </p>
       </>
     ),
   },
-]
+];
