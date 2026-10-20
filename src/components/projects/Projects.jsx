@@ -193,7 +193,7 @@ const projects = [
     title: "Movie & TV Discovery",
     imgSrc: "project-imgs/movie-api.jpg",
     code: "https://github.com/nate2293/movie-api-application",
-    projectLink: "https://movie-api-application-oqxp8pgg.on-forge.com",
+    projectLink: "https://movie-api-application-3dmxvnhk.on-forge.com/",
     tech: [
       "Laravel",
       "React",
